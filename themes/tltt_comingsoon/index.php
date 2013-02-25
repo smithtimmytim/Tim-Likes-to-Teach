@@ -22,13 +22,13 @@
     <header role="banner">
       <div class="contain">
         <img class="logo" src="<?php bloginfo('template_url') ?>/img/supersmith.svg" alt="Supersmith Logo">
-        <h1><a href="/" title="Link to the Homepage">TimLikesToWrite.com</a></h1>
+        <h1><a href="/" title="Link to the Homepage">TimLikesToTeach.com</a></h1>
       </div><!-- end .contain -->
     </header><!-- /header -->
 
     <section class="main-content" role="main">
       <div class="contain">
-        <h2>Learn Web Design, Front-End Development, WordPress, Scss, and more with Your Pal, <a href="http://timothybsmith.com" title="Tim Smith">Tim Smith</a></h2>
+        <h2>Learn Web Design, Front-End Development, WordPress, Scss, and more with Your Pal, <a href="http://timothybsmith.com" title="Tim Smith">Tim Smith</a>.</h2>
         
         <div class="video-pusher">
           <!-- video embed here -->
