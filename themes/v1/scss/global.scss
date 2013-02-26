@@ -18,6 +18,14 @@ a {text-decoration: none !important;}
 @import "type";
 @import "compass/css3";
 
+// Reusable Classes 
+
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 // Semi-Global Styles 
 a {
     color: $linkColor;
@@ -112,6 +120,12 @@ nav {
     line-height: 1.4;
     text-align: center;
     font-size: 2.2em;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: rgba(white, .7);
+    }
   }
 }
 
@@ -281,7 +295,112 @@ ul {
   }
 }
 
+// Form Styles
 
+.gform_fields {
+  list-style-type: none;
+  margin: 0;
+}
+
+.gfield {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.gfield_label {
+  margin-bottom: 10px;
+  display: block;
+  color: $mainColor;
+  font-weight: bold;
+  font-size: .87em;
+}
+
+.gfield_required {
+  color: $linkColor;
+}
+
+.ginput_left {
+  position: relative;
+  width: 50%;   
+  padding-right: 10px;
+  display: inline-block;
+  input {
+    padding: 10px 0 10px 50px;
+    border: 1px solid #ddd;
+    @include border-radius(3px);
+    @include transition(all .2s ease-in-out);
+    width: 100%;
+    &:focus {
+      border-color: darken(#ddd, 15%);
+    }
+  }
+  label {
+    color: #bbb;
+    text-transform: uppercase;
+    font-size: .65em;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+.ginput_right {
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  input {
+    padding: 10px 0 10px 50px;
+    border: 1px solid #ddd;
+    @include border-radius(3px);
+    @include transition(all .2s ease-in-out);
+    width: 100%;
+    &:focus {
+      border-color: darken(#ddd, 15%);
+    }
+  }
+  label {
+    color: #bbb;
+    text-transform: uppercase;
+    font-size: .65em;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+.g_email {
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    @include border-radius(3px);
+    @include transition(all .2s ease-in-out);
+    &:focus {
+      border-color: darken(#ddd, 15%);
+    }
+  }
+}
+
+.g_message {
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    @include border-radius(3px);
+    @include transition(all .2s ease-in-out);
+    resize: none;
+    &:focus {
+      border-color: darken(#ddd, 15%);
+    }
+  }
+}
+
+.gform_button {
+  @include transition(background .2s ease-in-out);
+}
 
 
 
@@ -297,27 +416,30 @@ ul {
     margin-bottom: 40px;
     text-transform: uppercase;
   }
-  input.email {
-    float: left;
-    padding: 20px;
-    width: 75%;
-    @include border-radius(4px 0 0 4px);
-    font-size: 1.2em;
-    &:focus {
-      box-shadow: inset 0 0 0 1px $linkColor;
-    }
+}
+
+.email-field {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  @include border-radius(4px 0 0 4px);
+  font-size: 1.2em;
+  @include transition(box-shadow .2s ease-in-out);
+  &:focus {
+    box-shadow: inset 0 0 0 3px $linkColor;
   }
-  input.button {
-    font-size: 1.2em;
-    background: $linkColor;
-    color: white;
-    padding: 20px;
-    width: 25%;
-    @include border-radius(0 4px 4px 0);
-    @include transition(background .2s ease-in-out);
-    &:hover {
-      background: lighten($linkColor, 5%);
-    }
+}
+
+.submit {
+  font-size: 1.2em;
+  background: $linkColor;
+  color: white;
+  padding: 20px;
+  width: 30%;
+  @include border-radius(0 4px 4px 0);
+  @include transition(background .2s ease-in-out);
+  &:hover {
+    background: lighten($linkColor, 5%);
   }
 }
 
@@ -364,7 +486,7 @@ ul {
 
 footer {
   background: $mainColor;
-  padding: 20px 0;
+  padding: 30px 0;
   color: white;
   font-size: .85em;
   a {

@@ -1,15 +1,18 @@
 
   <section class="newsletter">
     <div class="contain">
-      <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup">
+      <!-- Begin Campaign Monitor Signup Form -->
+      <div class="cm_signup">
         <h2>Stay Up to Date on New Courses</h2>
-      <form action="http://timothybsmith.us1.list-manage.com/subscribe/post?u=3fc7a38c9330697fdbfff885c&amp;id=bf505962bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-      </form>
+        <form action="http://anythingoes.createsend.com/t/t/s/btuld/" method="post" id="subForm">
+          <div>
+          <label class="screen-reader-text" for="btuld-btuld">Email:</label>
+          <input class="email-field" type="text" name="cm-btuld-btuld" id="btuld-btuld" placeholder="E-mail Address" />
+          <input class="submit" type="submit" value="Subscribe" />
+          </div>
+        </form>
       </div>
-      <!--End mc_embed_signup-->
+      <!-- end .cm_signup-->
     </div>  
   </section>
 
@@ -18,7 +21,7 @@
       <img src="<?php bloginfo('template_url') ?>/img/me.png" alt="Picture of Tim Smith" />
       <div class="about-me-text">
         <h2>About Me</h2>
-        <p>Hi! I'm Tim Smith, a Designer, Talker &amp; Coffee Addict. This is where I teach.</p>
+        <p>Hi! I'm Tim Smith, a Designer, Talker &amp; Coffee Addict.</p>
         <p>I’m the Director of Design at <a href="http://rocketlift.com">Rocket Lift</a> and I host a podcast about design called <a href="http://theeastwing.net">The East Wing</a>. I'm also the Founder &amp; Editor of a print publication called <a href="http://lustramag.com">Lustra</a>.</p>
         <p><a href="http://timothybsmith.com">timothybsmith.com</a></p>
     </div><!-- end .about-me-text -->
@@ -27,7 +30,7 @@
 
   <footer role="contentinfo">
     <div class="contain">
-      <p><em>Tim Likes To Teach</em> &copy; <?php echo date('Y')?>  <a href="http://anythingo.es">Anythin&rsquo; Goes LLC.</a></p>
+      <small><em>Tim Likes To Teach</em> &copy; <?php echo date('Y')?>  <a href="http://anythingo.es">Anythin&rsquo; Goes LLC.</a></small>
     </div><!-- end .contain -->
   </footer>
 
