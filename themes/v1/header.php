@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/global.css"/>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/responsify.css"/>
 
 <!-- Typekit Code -->
 <script type="text/javascript" src="//use.typekit.net/eam5ytk.js"></script>

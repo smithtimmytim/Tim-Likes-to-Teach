@@ -139,6 +139,8 @@ nav {
   img {
     float: left;
     margin-right: 40px;
+    width: 100%; height: auto;
+    max-width: 300px;
   }
   .text {
     padding: 40px 40px 40px 0;
@@ -182,7 +184,7 @@ nav {
 }
 
 .col-1 {
-  max-width: 300px;
+  width: 34.8837209%;
   margin-right: 40px;
   float: left;
   h3 {
@@ -257,9 +259,10 @@ ul {
 }
 
 .content-col {
-  max-width: 520px;
-  margin-right: 40px;
+  width: 60.4651163%;
+  margin-right: 04.6511628%;
   float: left;
+  overflow: hidden;
   h2 {
     color: $gray;
     font-size: 1.8em;
@@ -275,7 +278,7 @@ ul {
 
 .sidebar {
   float: left;
-  max-width: 300px;
+  width: 34.8837209%;
   h3 {
     font-size: .95em;
     font-weight: bold;
@@ -459,12 +462,15 @@ ul {
     @include border-radius(200px);
     border: 10px solid white;
     float: left;
-    margin-right: 20px;
+    width: 23.4042553%;
   }
 }
 
 .about-me-text {
   margin-top: 30px;
+  float: left;
+  width: 74.4680851%;
+  padding-left: 20px;
   h2 {
     color: $mainColor;
     font-weight: bold;
