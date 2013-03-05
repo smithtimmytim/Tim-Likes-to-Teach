@@ -12,7 +12,7 @@
 
           <div class="price">
             <p>&#x0024;<?php the_field('price'); ?>.00</p>
-            <a href="<?php the_field('payment_link'); ?>" class="button sbe-button" title="Buy Course">Buy Course</a>
+            <a href="<?php the_field('payment_link'); ?>" target="_blank" class="button" title="Buy Course">Buy Course</a>
           </div>
 
           <h3>Difficulty Level</h3>
