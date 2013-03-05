@@ -21,6 +21,27 @@
 
 <body <?php body_class($class); ?>>
 
+  <section class="logged-in-user-info">
+    <div class="contain">
+      <?php if ( is_user_logged_in() ) : ?>
+
+        <div class="profile-box signed-in">
+          <a class="profile" href="<?php echo memberful_account_url(); ?>">
+            <?php echo get_avatar( wp_get_current_user()->user_email, 25 ); ?>
+            <?php echo wp_get_current_user()->display_name; ?>
+          </a>
+          <a class="sign-out" href="<?php echo memberful_sign_out_url(); ?>">Sign out</a>
+        </div>
+
+        <?php else : ?>
+        <div class="profile-box signed-out">
+          Are you a member? Please <a title="Sign in" href="<?php echo memberful_sign_in_url(); ?>">sign in</a>
+        </div>
+
+      <?php endif; ?>
+    </div><!-- end .contain -->
+  </section>
+
   <header role="banner">
     <div class="contain">
       <a href="/" title="Back to the homepage" class="logo">
@@ -29,7 +50,6 @@
       </a>
 
       <nav role="navigation">
-        <a href="<?php echo memberful_sign_in_url(); ?>" title="">Sign In</a>
         <a href="/help">Help</a>
       </nav>
     </div><!-- end .contain -->

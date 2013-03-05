@@ -86,6 +86,35 @@ nav {
   overflow: hidden;
 }
 
+// Memberful Stuff
+
+.logged-in-user-info {
+  background: darken($mainColor, 5%);
+  padding: 20px 0;
+  line-height: 135%;
+  color: white;
+  font-size: .90em;
+  a {
+    color: lighten($mainColor, 25%);
+    &:hover {
+      color: lighten($mainColor, 50%);
+    }
+  }
+}
+
+a.profile {
+  color: white;
+}
+
+.profile {
+  margin-right: 10px;
+  img {
+    border: 1px solid white; 
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
 // Main Content Styles
 
 .main-content {
@@ -244,6 +273,16 @@ ul {
 .page {
   @extend .single;
   .entry {
+  }
+}
+
+.page .entry {
+  h2 {
+    color: $gray;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-transform: none;
+    font-weight: normal;
   }
 }
 
