@@ -70,8 +70,12 @@ nav {
   font-size: .9em;
   a {
     color: lighten($mainColor, 25%);
+    margin-right: 10px;
     &:hover {
       color: lighten($mainColor, 50%);
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
