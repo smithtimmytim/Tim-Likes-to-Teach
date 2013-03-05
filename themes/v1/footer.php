@@ -35,8 +35,9 @@
   </footer>
 
 
-<!-- Spacebox Code -->
-<script type='text/javascript' src='https://spacebox.io/embed/js/embed-v1.js'></script>
+  <!-- FitVids -->
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery.fitvids.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/stuff-ck.js"></script>
 
 </body>
 </html>
