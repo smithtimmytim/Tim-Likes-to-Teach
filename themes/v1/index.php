@@ -15,6 +15,7 @@
       </div><!-- end .text -->
     </article>
 
+
   <?php endwhile; endif; ?>
 
 </section> <!-- end .main-content -->
