@@ -284,6 +284,14 @@ ul {
     text-transform: none;
     font-weight: normal;
   }
+  h3 {
+    color: $mainColor;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
 }
 
 .content-col {
