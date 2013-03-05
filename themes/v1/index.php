@@ -15,6 +15,9 @@
       </div><!-- end .text -->
     </article>
 
+    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Guest Widget') ) : ?>
+    <?php endif; ?>
+
 
   <?php endwhile; endif; ?>
 

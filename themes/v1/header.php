@@ -29,8 +29,8 @@
       </a>
 
       <nav role="navigation">
-        <a href="/help">Help</a>
         <a href="<?php echo memberful_sign_in_url(); ?>" title="">Sign In</a>
+        <a href="/help">Help</a>
       </nav>
     </div><!-- end .contain -->
   </header>
