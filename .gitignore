@@ -3,4 +3,7 @@
 /uploads/
 .DS_Store
 
+/.sass-cache
+
+
 /themes/v1/.sass-cache/
