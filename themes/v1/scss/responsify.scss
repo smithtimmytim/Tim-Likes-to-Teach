@@ -71,9 +71,17 @@
 @media screen and (max-width: 640px) {
 
   .col-1 {
+    border-bottom: 1px solid #eee;
     float: none;
     width: 100%;
     padding-right: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .single, .error404 {
@@ -85,15 +93,21 @@
   }
 
   .content-col {
+    border-bottom: 1px solid #eee;
     float: none;
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .sidebar {
     float: none;
     width: 100%;
+  }
+
+  .about-me-text {
+    margin-top: 0;
   }
 
 }
@@ -168,6 +182,10 @@
 
 @media screen and (max-width: 320px) {
   
+  body {
+    background: white;
+  }
+
   header {
     h1 {
       font-size: 1.2em;
@@ -182,8 +200,22 @@
     width: 45px; height: 45px;
   }
 
+  .entry {
+    background: none;
+    box-shadow: none;
+    .text {
+      padding: 0;
+    }
+  }
+
+  .single, .page {
+    .entry {
+      padding: 0;
+    }
+  }
+
   .email-field, .submit {
-    padding: 10px;
+    padding: 15px 10px;
     font-size: 1em;
   }
 
