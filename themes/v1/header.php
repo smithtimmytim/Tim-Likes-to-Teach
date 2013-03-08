@@ -57,6 +57,6 @@
 
   <section class="statement">
     <div class="contain">
-      <h1>Learn Web Design, Front-End Development, WordPress, Scss, and more with Your Pal, <a href="http://timothybsmith.com" title="Tim Smith">Tim Smith</a></h1>
+      <h1>Learn Web Design, Front-End Development, WordPress, SCSS, and more with Your Pal, <a href="http://timothybsmith.com" title="Tim Smith">Tim Smith</a></h1>
     </div> <!-- end .contain -->
   </section><!-- end .statement -->
