@@ -11,6 +11,24 @@
   left: -9999px;
 }
 
+.btn {
+  background: $linkColor;
+  padding: 01.4285714% 01.7142857%;
+  display: inline-block;
+  color: white;
+  @include border-radius(3px);
+  &:hover {
+    background: darken($linkColor, 5%);
+    color: white;
+  }
+}
+
+.contain {
+  max-width: 940px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 // Semi-Global Styles 
 a {
     color: $linkColor;
@@ -35,12 +53,8 @@ body {
 
 header {
   background: $mainColor;
-  padding: 30px 0;
   @include sans-type;
-  img {
-    float: left;
-    margin-right: 15px;
-  }
+  clear: both;
   h1 {
     margin-top: 15px;
     font-size: 1.5em;
@@ -51,9 +65,13 @@ header {
 }
 
 .logo {
+  background: lighten($mainColor, 5%);
   display: inline-block;
+  float: left;
+  padding: 02.3404255% 02.1276596% 02.1276596%;
+  margin: 0 02.1276596% 0 0;
   img {
-    width: 60px; height: 60px;
+    width: 30px; height: 30px;
   }
   h1 {
     display: inline-block;
@@ -64,10 +82,10 @@ header {
   }
 }
 
-nav {
-  float: right;
-  margin-top: 24px;
+.header-nav {
+  margin: 03.4042553% 02.1276596% 0 0;
   font-size: .9em;
+  float: left;
   a {
     color: lighten($mainColor, 25%);
     margin-right: 10px;
@@ -80,24 +98,69 @@ nav {
   }
 }
 
-.contain {
-  max-width: 940px;
-  margin: 0 auto;
-  overflow: hidden;
+.search {
+  float: left;
+  margin: 02.5531915% 0 0;
+  font-size: .9em;
+  #s {
+    float: left;
+    background: lighten($mainColor, 5%);
+    padding: 5px; max-height: 30px;
+    @include border-radius(3px 0 0 3px);
+    @include transition (background .2s ease-in-out);
+    &:focus {
+      background: white;
+    }
+  }
+  #searchsubmit {
+    float: left;
+    color: white;
+    clear: right;
+    background: lighten($mainColor, 10%);
+    padding: 5px 10px;
+    max-height: 30px;
+    @include border-radius(0 3px 3px 0);
+    @include transition (background .2s ease-in-out);
+    &:hover {
+      background: $linkColor;
+    }
+  }
 }
 
 // Memberful Stuff
 
-.logged-in-user-info {
-  background: darken($mainColor, 5%);
-  padding: 20px 0;
+.signed-in-status {
   line-height: 135%;
   color: white;
   font-size: .90em;
+  float: right;
+  margin: 02.6595745% 0 0;
   a {
     color: lighten($mainColor, 25%);
     &:hover {
       color: lighten($mainColor, 50%);
+    }
+  }
+}
+
+.profile-box {
+  &.signed-out {
+    overflow: hidden;
+    clear: both;
+    .btn {
+      color: white;
+      float: left;
+      padding: 5px 10px;
+      margin: 0 10px 0 0;
+      &:last-child {
+        margin: 0;
+      }
+      &.sign-in {
+        background: darken($mainColor, 4%);
+        &:hover {
+          background: darken($mainColor, 6%);
+        }
+      }
     }
   }
 }
@@ -118,26 +181,25 @@ a.profile {
 // Main Content Styles
 
 .main-content {
-  max-width: 940px;
-  margin: 50px auto;
+  margin: 50px 0;
   color: darken($gray, 5%);
-  h2 {
-    text-transform: uppercase;
-    color: $mainColor;
-    font-weight: bold;
-    margin-bottom: 40px;
+  // h2 {
+  //   text-transform: uppercase;
+  //   color: $mainColor;
+  //   font-weight: bold;
+  //   margin-bottom: 40px;
 
-  }
+  // }
 }
 
 .statement {
   background: $linkColor;
-  padding: 40px 0;
+  padding: 02.6595745% 0;
   color: white;
   h1 {
     line-height: 1.4;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 1.5em;
   }
   a {
     color: white;
@@ -152,8 +214,7 @@ a.profile {
   @include border-radius(3px);
   box-shadow: 0 3px 0 rgba(black, .10);
   overflow: hidden;
-  margin-bottom: 50px;
-
+  margin: 0 0 3px;
   img {
     float: left;
     margin-right: 40px;
@@ -242,7 +303,7 @@ hr {
 
 .single, .error404 {
   .entry {
-    padding: 40px;
+    padding: 05.7142857%;
   }
   .text {
     padding: 0 04.2553191% 0 0;
@@ -315,20 +376,85 @@ ul {
   }
 }
 
-.yoast-breadcrumb {
+.type-course-videos {
+  .contain {
+    max-width: 700px;
+  }
+  .entry {
+    h2 {
+      color: $mainColor;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0 0 02.8571429%;
+    }
+    p {
+      color: $mainColor;
+      font-size: 1.3em;
+      &.video_length {
+        color: #888;
+        font-size: .9em;
+        margin: 0 0 03.5714286%;
+      }
+    }
+  }
+}
+
+.video-container {
+  position: relative;
+  top: 2px;
+}
+
+.video-container-anon {
+  // 700x394
+  background: $mainColor;
+  height: 56.2857143%;
+  padding: 20% 05.7142857%;
+  @include border-radius(3px 3px 0 0);
+  text-align: center;
+  h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.2;
+    margin: 0 0 02.8571429%;
+    small {
+      color: lighten($mainColor, 25%);
+      display: block;
+      font-weight: 200;
+      font-size: .75em;
+    }
+  }
+}
+
+.video-meta-bar {
   background: white;
   border-bottom: 1px solid #eee;
+  color: lighten($gray, 20%);
+  overflow: hidden;
+  clear: both;
+}
+
+.breadcrumb {
+  white-space: nowrap;
   padding: 02.6595745% 04.2553191%;
-  color: lighten($gray, 30%);
+  p {
+    font-size: .90em;
+  }
   span {
     margin: 0 01.0638298%;
     &:first-child {
       margin: 0 01.0638298% 0 0;
     }
   }
-  .breadcrumb_last {
+  .trail-end {
     margin: 0;
   }
+}
+
+.video-nav {
+  background: darken(white, 3%);
+  padding: 01.4285714% 04.2553191%;
+  text-align: right;
 }
 
 // Help Page Styles 

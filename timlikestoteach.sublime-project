@@ -1,12 +1,12 @@
 {
 	"folders":
 	[
-		{
-			"path": "themes/v1.1",
-      "folder_exclude_patterns": [".sass-cache"]
-		},
     {
       "path": "/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/plugins"
+    },
+    {
+      "path": "themes/v1.1",
+      "folder_exclude_patterns": [".sass-cache"]
     }
 	],
 
