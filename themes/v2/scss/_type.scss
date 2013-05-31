@@ -1,0 +1,30 @@
+@mixin sans-type {
+  font-family: "source-sans-pro",sans-serif;
+}
+
+@mixin serif-type {
+  font-family: "adelle",serif;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0 0 15px 20px;
+  list-style-type: square;
+  li {
+    font-size: .95em;
+    padding: 8px 0;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}

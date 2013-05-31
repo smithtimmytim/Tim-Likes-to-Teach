@@ -5,7 +5,7 @@
       "path": "/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/plugins"
     },
     {
-      "path": "themes/v1.1",
+      "path": "themes/v2",
       "folder_exclude_patterns": [".sass-cache"]
     }
 	],
