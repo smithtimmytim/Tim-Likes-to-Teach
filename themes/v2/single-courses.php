@@ -18,7 +18,7 @@
 
             <?php
             $product_name = get_field('integration_slug');
-            if ( has_memberful_subscription ( '27-tim-likes-to-teach-subscription' ) && has_memberful_product ( $product_name ) ) : ?>        
+            if ( has_memberful_subscription ( '27-tim-likes-to-teach-subscription' ) || has_memberful_product ( $product_name ) ) : ?>        
 
             <?php
               // Find connected posts
