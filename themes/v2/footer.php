@@ -22,7 +22,7 @@
       <div class="about-me-text">
         <h2 class="section-title">About Me</h2>
         <p>Hi! I'm Tim Smith, a Designer, Talker &amp; Coffee Addict.</p>
-        <p>I’m the Director of Design at <a href="http://rocketlift.com">Rocket Lift</a> and I host a podcast about design called <a href="http://theeastwing.net">The East Wing</a>. I'm also the Founder &amp; Editor of a print publication called <a href="http://lustramag.com">Lustra</a>.</p>
+        <p>I host a podcast about design called <a href="http://theeastwing.net">The East Wing</a>. I'm also the Founder &amp; Editor of a publication called <a href="http://lustramag.com">Lustra</a>.</p>
         <p><a href="http://timothybsmith.com">timothybsmith.com</a></p>
     </div><!-- end .about-me-text -->
     </div><!-- end .contain -->

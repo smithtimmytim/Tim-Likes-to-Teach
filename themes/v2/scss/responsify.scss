@@ -66,6 +66,15 @@
 
 }
 
+@media screen and (max-width: 836px ) {
+  .statement {
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+
+}
+
 @media screen and (max-width: 650px ) {
   
   .module {
@@ -194,6 +203,11 @@
 
 @media screen and (max-width: 400px) {
 
+  .contain {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .statement {
     h1 {
       font-size: 1.5em;
@@ -230,12 +244,23 @@
   nav {
     margin-top: 0;
   }
-
-  .logo img {
-    width: 45px; height: 45px;
+  
+  .mobile-container {
+    .search-form {
+      width: 50%;
+    }
+    .header-nav {
+      margin: 03.4042553% 6.12766% 0 0;
+    }
   }
 
-  .entry {
+  .search-form {
+    #s {
+      width: 55%;
+    }
+  }
+
+  .entry, .module {
     background: none;
     box-shadow: none;
     .text {
@@ -250,7 +275,7 @@
   }
 
   .email-field, .submit {
-    padding: 15px 10px;
+    padding: 10px;
     font-size: 1em;
   }
 
