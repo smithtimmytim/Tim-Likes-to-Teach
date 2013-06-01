@@ -56,17 +56,7 @@
            <?php endif; ?>
           </div><!-- end .text -->
 
-          <div class="col-1">          
-            <?php
-            $product_name = get_field('integration_slug');
-            if ( has_memberful_subscription ( '27-tim-likes-to-teach-subscription' ) || has_memberful_product ( $product_name ) ) : ?>
-
-            <?php else : ?>
-              <div class="price">
-                <p>&#x0024;<?php the_field('price'); ?>.00</p>
-                <a href="<?php the_field('payment_link'); ?>" target="_blank" class="btn secondary" title="Buy Course">Buy Course</a>
-              </div>
-            <?php endif; ?>
+          <div class="col-1">
 
             <h3>Difficulty Level</h3>
             <p><?php the_field('difficulty_level'); ?></p>

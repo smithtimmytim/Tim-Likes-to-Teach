@@ -52,7 +52,7 @@
           <?php else : ?>
           <div class="profile-box signed-out">
             <a title="Sign in" class="btn sign-in" href="<?php echo memberful_sign_in_url(); ?>">Sign In</a>
-            <a title="Sign in" class="btn" href="https://anythingoes.memberful.com/orders/new?subscription=27">Sign Up</a>
+            <a title="Sign up" class="btn" href="https://anythingoes.memberful.com/orders/new?subscription=27">Sign Up</a>
           </div>
 
         <?php endif; ?>
@@ -63,6 +63,6 @@
 
   <section class="statement">
     <div class="contain">
-      <h1>Learn Web Design, Front-End Development, and more with Your Pal, <a href="http://timothybsmith.com" title="Tim Smith">Tim Smith</a></h1>
+      <h1>Learn Web Design, Front-End Development, and more with Your Pal, <a href="http://ttimsmith.com" title="Tim Smith">Tim Smith</a></h1>
     </div> <!-- end .contain -->
   </section><!-- end .statement -->

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin"
+			],
+			[
 				"marg",
 				"margin-top"
 			],
@@ -22,10 +26,6 @@
 			[
 				"bord",
 				"border-radius"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"border",
@@ -432,6 +432,13 @@
 	},
 	"file_history":
 	[
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/footer.php",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/scss/responsify.scss",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/scss/_bits.scss",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/scss/global.scss",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/header.php",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/single-courses.php",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/style.css",
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/timlikestoteach.sublime-project",
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v1.1/scss/global.scss",
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v1.1/scss/responsify.scss",
@@ -552,14 +559,7 @@
 		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/scss/blog.scss",
 		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/blog-post.php",
 		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/blog-index.php",
-		"/Users/timothybsmith/Library/Caches/Cleanup At Startup/Transmit/3D8D14AF-F813-4987-9987-31C8A82A60AA/Lgo2movies-style.css",
-		"/Users/timothybsmith/Library/Caches/Cleanup At Startup/Transmit/EFB40322-D96F-4545-85CD-02BC4BB01405/Lgo2movies-style.css",
-		"/Users/timothybsmith/Documents/sites/timothybsmith/wp-content/themes/v5/footer.php",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift_static/scss/blog.scss",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift_static/portfolio-item.php",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift_static/scss/portfolio.scss",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift_static/scss/global.scss",
-		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v1/scss/_bits.scss"
+		"/Users/timothybsmith/Library/Caches/Cleanup At Startup/Transmit/3D8D14AF-F813-4987-9987-31C8A82A60AA/Lgo2movies-style.css"
 	],
 	"find":
 	{
@@ -578,6 +578,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".left",
 			"?></",
 			".button",
 			"blue",

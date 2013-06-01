@@ -27,7 +27,7 @@
 
 .btn, .gform_button {
   background: $linkColor;
-  padding: 1.8% 02.6595745%;
+  padding: 10px 12px;
   display: inline-block;
   color: white;
   @include border-radius(3px);
@@ -53,6 +53,11 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
+.right {
+  float: right;
+}
+
 
 // Semi-Global Styles 
 a {
