@@ -244,29 +244,33 @@ a.profile {
   margin: 0 0 04.2553191%;
 }
 
+
 .entry {
   background: white;
-  @include border-radius(3px);
+  @include border-radius(4px);
   box-shadow: 0 3px 0 rgba(black, .10);
   overflow: hidden;
   margin: 0 0 04.2553191%;
+  width: 46.8085106%;
+  margin-right: 0;
+  float: left;
+  &:nth-child(1n+1) {
+    margin-right: 03.1914894%;
+  }
   &:last-child {
     margin: 0 0 3px;
   }
   img {
-    float: left;
-    width: 31.9148936%; 
     height: auto;
-    max-width: 300px;
-    margin: 0 04.2553191% 0 0;
-
+    width: 100%;
   }
   .text {
     overflow: hidden;
-    padding: 04.2553191% 04.2553191% 04.2553191% 0;
-    float: left;
-    width: 63.8297872%;
-    clear: right;
+    padding: 04.2553191%;
+    p {
+      height: 5.8em;
+      overflow: hidden;
+    }
     .btn {
       float: right;
       clear: right;

@@ -4,7 +4,7 @@
 
 add_theme_support ('post-thumbnails');
 
-add_image_size('post-art', 300, 300);
+add_image_size('post-art');
 
 //jQuery Insert From Google
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
