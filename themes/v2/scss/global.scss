@@ -212,6 +212,99 @@ a.profile {
   }
 }
 
+// Homepage Specific Styles
+
+.home {
+  .statement {
+    background: $mainColor;
+    padding: 4.5% 0 0;
+    max-height: 680px;
+    overflow: hidden;
+    h1 {
+      font-size: 3.5em;
+      font-weight: 200;
+    }
+  }
+  .about-me {
+    display: none;
+  }
+  footer {
+    background: darken($cream, 10%);
+    color: darken($cream, 65%);
+    a {
+      color: darken($cream, 65%);
+      &:hover {
+        color: darken($cream, 75%);
+      }
+    }
+  }
+}
+
+.logged-in {
+  .statement {
+    max-height: 580px;
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  margin: 4.5% 0 0;
+  border-top: 1.5em solid lighten($mainColor, 5%);
+  border-right: 1.5em solid lighten($mainColor, 5%);
+  border-left: 1.5em solid lighten($mainColor, 5%);
+  border-radius: 5px;
+  max-width: 940px;
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.play-btn {
+  background: rgba($mainColor, .9);
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  padding: 12px 20px;
+  max-width: 70px;
+  top: 170px;
+  right: 30px;
+  left: 30px;
+  margin: 0 auto;
+  &:hover {
+    background: rgba($mainColor, .7);
+  }
+  img {
+    max-width: 25px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.testimonial {
+  float: left;
+  margin: 0 02.1276596% 0 0;
+  width: 48.9361702%;
+  text-align: center;
+  &:last-child {
+    margin: 0;
+  }
+  img {
+    border-radius: 80px;
+    height: auto;
+    max-width: 150px;
+    margin: 0 15px 0 0;
+  }
+  blockquote {
+    color: darken($cream, 75%);
+    margin: 0 0 10px;
+  }
+  figcaption {
+    color: darken($cream, 65%);
+    font-size: .9em;
+    padding-right: 15px;
+  }
+}
+
 // Main Content Styles
 
 .main-content {
@@ -223,10 +316,27 @@ a.profile {
   background: $linkColor;
   padding: 02.6595745% 0;
   color: white;
+  text-align: center;
+  .btn {
+    font-size: 1.5em;
+    padding: 12px 20px;
+  }
   h1 {
     line-height: 1.4;
-    text-align: center;
     font-size: 1.5em;
+    margin: 0 0 1%;
+  }
+  p {
+    color: lighten($mainColor, 40%);
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0 0 04.2553191%;
+    a {
+      color: lighten($mainColor, 40%);
+      &:hover {
+        color: lighten($mainColor, 50%);
+      }
+    }
   }
   a {
     color: white;
@@ -762,3 +872,6 @@ footer {
     }
   }
 }
+
+
+@import "modal";

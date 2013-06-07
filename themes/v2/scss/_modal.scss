@@ -1,0 +1,66 @@
+// Modal Specific Stuff
+
+.modal {
+  .contain {
+    max-width: 650px;
+    overflow: visible;
+  }
+}
+
+.modal {
+  background: white;
+  box-shadow: 0 0 10px rgba(black, .1);
+  border: 1px solid rgba(black, .1);
+  border-radius: 3px;
+
+  position: absolute;
+  max-width: 700px;
+  top: 50px;
+  left: 30px;
+  right: 30px;
+  margin: 0 auto;
+  padding: 30px;
+
+  /* Embiggen */
+  @include transform(scale(1.5));
+
+  /* Hidden */
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  display: none;
+}
+
+
+.dialogIsOpen .wrapper {
+
+  /* Blur and de-color */
+  @include filter(blur(5px) grayscale(70%));
+}
+
+.dialogIsOpen .modal {
+  
+  /* Regular size and visible */
+  @include transform(scale(1));
+  opacity: 1;
+  display: block;
+
+  /* Clickable */
+  pointer-events: auto;
+
+}
+
+.dialogIsOpen .overlay {
+  background: rgba($mainColor, .9);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0; left:0; bottom: 0; right: 0;
+}
+
+.wrapper, .modal {
+  
+  @include transition(all 0.4s ease);
+
+}
