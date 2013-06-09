@@ -7,6 +7,18 @@
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <article class="module">
+          
+          <?php
+            $product_name = get_field('integration_slug');
+            if ( has_memberful_subscription ( '27-tim-likes-to-teach-subscription' ) || has_memberful_product ( $product_name ) ) : ?>
+
+            <?php else : ?>
+
+              <div class="signup-cta">
+                <p>Get access to this course and others for $8.99/month. <a href="https://anythingoes.memberful.com/orders/new?subscription=27">Sign Up</a></p>
+              </div>
+            <?php endif; ?>
+
           <div class="text">
             <div class="video-preview">
               <?php the_field('video_preview'); ?>
@@ -62,8 +74,16 @@
             <p><?php the_field('difficulty_level'); ?></p>
             <h3>Course Length</h3>
             <p><?php the_field('course_length'); ?></p>
-            <h3>Course Files</h3>
-            <p>You can get all or most of the files used in this course, in the .zip you received after purchasing.</p>
+            
+            <?php
+            $product_name = get_field('integration_slug');
+            if ( has_memberful_subscription ( '27-tim-likes-to-teach-subscription' ) || has_memberful_product ( $product_name ) ) : ?>
+              <?php if ( get_field ('course_download') ) : ?>
+                <h3>Course Files</h3>
+                <p><a href="<?php the_field('course_download'); ?>">Download from Github</a></p>
+              <?php endif; ?>
+            <?php endif; ?>
+
             <h3>Feedback</h3>
             <p>I'd love to hear your feedback! I invite you to <a href="/help">get in touch</a>, and tell me your thoughts on the course.</p>
           </div><!-- end .col-1 -->

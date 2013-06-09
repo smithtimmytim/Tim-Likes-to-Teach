@@ -70,7 +70,7 @@
       <?php if ( is_user_logged_in() ) : ?>
 
       <?php else : ?>
-      <a href="#" class="btn">Sign Up</a>
+      <a href="https://anythingoes.memberful.com/orders/new?subscription=27" class="btn">Sign Up</a>
       <?php endif; ?>
       <div class="video-wrapper">
         <a class="fancybox-media play-btn" href="http://player.vimeo.com/video/60409948?title=0&amp;byline=0&amp;portrait=0"><img src="<?php bloginfo('template_url');?>/img/play-icon.svg"/></a>
