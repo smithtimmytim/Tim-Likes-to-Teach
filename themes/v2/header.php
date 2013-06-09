@@ -60,9 +60,3 @@
 
     </div><!-- end .contain -->
   </header>
-
-  <section class="statement">
-    <div class="contain">
-      <h1>Learn Web Design, Front-End Development, and more with Your Pal, <a href="http://ttimsmith.com" title="Tim Smith">Tim Smith</a></h1>
-    </div> <!-- end .contain -->
-  </section><!-- end .statement -->

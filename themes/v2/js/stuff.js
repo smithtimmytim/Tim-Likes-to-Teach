@@ -1,20 +1,33 @@
-$(".main-content").fitVids();
+$(".main-content, .video-pusher").fitVids();
 
-// Something happens
-  $("a.play-btn").on("click", function() {
-
-    // State changes
-    $("body").toggleClass("dialogIsOpen");
-
+$(document).ready(function() {
+  $('.fancybox-media').fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none',
+    type: 'iframe',
+    autoHeight: 'true',
+    closeBtn: 'false',
+    helpers : {
+      media : {}
+    }
   });
+});
 
-  $('body').on('keyup', function(e) {
-      if (e.keyCode === 27) {
-          $('body').removeClass('dialogIsOpen');
-          return false;
-      }
-  });
+// // Something happens
+//   $("a.play-btn").on("click", function() {
 
-   $('.overlay').on('click', function() {
-      $('body').removeClass('dialogIsOpen');
-    });
+//     // State changes
+//     $("body").toggleClass("dialogIsOpen");
+
+//   });
+
+//   $('body').on('keyup', function(e) {
+//       if (e.keyCode === 27) {
+//           $('body').removeClass('dialogIsOpen');
+//           return false;
+//       }
+//   });
+
+//    $('.overlay').on('click', function() {
+//       $('body').removeClass('dialogIsOpen');
+//     });

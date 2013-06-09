@@ -256,6 +256,8 @@ a.profile {
   max-width: 940px;
   img {
     vertical-align: bottom;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -266,7 +268,7 @@ a.profile {
   position: absolute;
   padding: 12px 20px;
   max-width: 70px;
-  top: 170px;
+  top: 35%;
   right: 30px;
   left: 30px;
   margin: 0 auto;
@@ -320,6 +322,9 @@ a.profile {
   .btn {
     font-size: 1.5em;
     padding: 12px 20px;
+    &:hover {
+      color: white;
+    }
   }
   h1 {
     line-height: 1.4;

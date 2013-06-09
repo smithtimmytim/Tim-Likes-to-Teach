@@ -4,40 +4,44 @@
 		"selected_items":
 		[
 			[
+				"max",
+				"max-height"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
 				"mar",
 				"margin"
 			],
 			[
-				"marg",
-				"margin-top"
+				"font",
+				"font-size"
 			],
 			[
-				"margin",
-				"margin-top"
+				"marg",
+				"margin-right"
 			],
 			[
 				"min",
 				"min-width"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"bord",
 				"border-radius"
 			],
 			[
-				"border",
-				"border"
-			],
-			[
 				"borde",
 				"border"
-			],
-			[
-				"padd",
-				"padding-left"
 			],
 			[
 				"bor",
@@ -312,10 +316,6 @@
 				"inline-block"
 			],
 			[
-				"max",
-				"max-width"
-			],
-			[
 				"h",
 				"h1"
 			],
@@ -432,8 +432,14 @@
 	},
 	"file_history":
 	[
-		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/page-courses.php",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/header-home.php",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/scss/_modal.scss",
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/scss/global.scss",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/scss/_reset.scss",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/front-page.php",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/js/stuff.js",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/footer-home.php",
+		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/page-courses.php",
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/scss/responsify.scss",
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/functions.php",
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v2/footer.php",
@@ -553,13 +559,7 @@
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v1/help.php",
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v1/scss/global.scss",
 		"/Users/timothybsmith/Documents/sites/timlikestoteach/wp-content/themes/v1/scss/responsify.scss",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/who-we-are.php",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/index.php",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/scss/portfolio.scss",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/scss/global.scss",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/portfolio-item.php",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/scss/blog.scss",
-		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/blog-post.php"
+		"/Users/timothybsmith/Documents/sites/rli-rocketlift/rocketlift.com/wp-content/themes/rocketlift_static/who-we-are.php"
 	],
 	"find":
 	{
@@ -578,6 +578,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
 			".left",
 			"?></",
 			".button",

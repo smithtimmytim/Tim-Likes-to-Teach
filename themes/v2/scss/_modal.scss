@@ -1,9 +1,10 @@
 // Modal Specific Stuff
 
+@import "compass/css3";
+
 .modal {
   .contain {
-    max-width: 650px;
-    overflow: visible;
+    max-width: 1140px;
   }
 }
 
@@ -14,12 +15,11 @@
   border-radius: 3px;
 
   position: absolute;
-  max-width: 700px;
-  top: 50px;
+  max-width: 1140px;
+  top: 25%%;
   left: 30px;
   right: 30px;
   margin: 0 auto;
-  padding: 30px;
 
   /* Embiggen */
   @include transform(scale(1.5));
@@ -31,12 +31,6 @@
   display: none;
 }
 
-
-.dialogIsOpen .wrapper {
-
-  /* Blur and de-color */
-  @include filter(blur(5px) grayscale(70%));
-}
 
 .dialogIsOpen .modal {
   
@@ -51,7 +45,7 @@
 }
 
 .dialogIsOpen .overlay {
-  background: rgba($mainColor, .9);
+  background: rgba(black, .8);
   width: 100%;
   height: 100%;
   display: block;
@@ -59,7 +53,7 @@
   top: 0; left:0; bottom: 0; right: 0;
 }
 
-.wrapper, .modal {
+.wrap, .modal {
   
   @include transition(all 0.4s ease);
 

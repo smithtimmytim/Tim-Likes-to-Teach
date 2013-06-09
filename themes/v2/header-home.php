@@ -7,6 +7,7 @@
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/global.css"/>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/responsify.css"/>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/jquery.fancybox.css"/>
 
 <!-- Typekit Code -->
 <script type="text/javascript" src="//use.typekit.net/eam5ytk.js"></script>
@@ -72,7 +73,7 @@
       <a href="#" class="btn">Sign Up</a>
       <?php endif; ?>
       <div class="video-wrapper">
-        <a href="#" class="play-btn"><img src="<?php bloginfo('template_url');?>/img/play-icon.svg"/></a>
+        <a class="fancybox-media play-btn" href="http://player.vimeo.com/video/60409948?title=0&amp;byline=0&amp;portrait=0"><img src="<?php bloginfo('template_url');?>/img/play-icon.svg"/></a>
         <img src="<?php bloginfo('template_url');?>/img/video-screenshot.png" alt="video screenshot">
       </div>
     </div> <!-- end .contain -->
