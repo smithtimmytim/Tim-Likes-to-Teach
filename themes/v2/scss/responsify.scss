@@ -151,6 +151,15 @@
   .statement {
     margin: 47px 0 0;
   }
+
+  .testimonial {
+    width: 75%;
+    float: none;
+    margin: 0 auto 8%;
+    &:last-child {
+      margin: 0 auto;
+    }
+  }
   
 
 
@@ -167,7 +176,7 @@
     padding: 20px 0;
   }
 
-  .statement {
+  .home .statement {
     h1 {
       font-size: 2em;
     }
@@ -203,7 +212,7 @@
     padding: 10px;
   }
 
-  .statement {
+  .home .statement {
     h1 {
       font-size: 1.5em;
     }
@@ -256,6 +265,12 @@
   .search-form {
     #s {
       width: 55%;
+    }
+  }
+
+  .statement {
+    .btn {
+      font-size: 1.2em;
     }
   }
   
