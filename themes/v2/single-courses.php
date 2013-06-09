@@ -85,7 +85,7 @@
             <?php endif; ?>
 
             <h3>Feedback</h3>
-            <p>I'd love to hear your feedback! I invite you to <a href="/help">get in touch</a>, and tell me your thoughts on the course.</p>
+            <p>I'd love to hear your thoughts! Please <a href="/help">get in touch</a>.</p>
           </div><!-- end .col-1 -->
         </article>
 

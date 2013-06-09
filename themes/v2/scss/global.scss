@@ -420,9 +420,10 @@ a.profile {
 
 .signup-cta {
   background: $green;
+  text-align: center;
   border-radius: 3px;
   color: white;
-  padding: 10px;
+  padding: 18px 10px;
   margin: 0 0 03.1914894%;
   p {
     font-weight: bold;
@@ -824,7 +825,7 @@ hr {
   @include border-radius(0 4px 4px 0);
   @include transition(background .2s ease-in-out);
   &:hover {
-    background: lighten($linkColor, 5%);
+    background: darken($linkColor, 5%);
   }
 }
 
