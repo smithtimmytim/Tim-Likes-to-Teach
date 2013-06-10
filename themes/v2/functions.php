@@ -24,4 +24,14 @@ function my_connection_types() {
 }
 add_action( 'p2p_init', 'my_connection_types' );
 
+function custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $excerpt ) {
+  return str_replace( '[...]', '...', $excerpt );
+}
+add_filter( 'wp_trim_excerpt', 'new_excerpt_more' );
+
 ?>

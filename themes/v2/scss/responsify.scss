@@ -149,8 +149,17 @@
     }
   }
 
+  .home {
+    .statement {
+      padding: 65px 0 0;
+    }
+    .main-content {
+      margin: 50px 0;
+    }
+  }
+
   .main-content {
-    margin: 85px 0;
+    margin: 85px 0 40px;
   }
 
 
@@ -186,7 +195,7 @@
 
   .main-content {
     h2 {
-      margin-bottom: 20px;
+      margin: 0 0 20px;
     }
   }
 
@@ -198,6 +207,16 @@
     margin-bottom: 20px;
   }
 
+  .module {
+    .search-form {
+      #s {
+        padding: 12px 10px;
+      }
+      #searchsubmit {
+        padding: 12px 10px;
+      }
+    }
+  }
 
 
 }
@@ -276,6 +295,17 @@
     }
   }
 
+  .module {
+    .search-form {
+      #s {
+        width: 70%;
+      }
+      #searchsubmit {
+        width: 30%;
+      }
+    }
+  }
+
   .statement {
     .btn {
       font-size: 1.2em;
@@ -293,6 +323,7 @@
   .entry, .module {
     background: none;
     box-shadow: none;
+    padding: 0;
     .text {
       padding: 04.2553191% 0 0;
     }
