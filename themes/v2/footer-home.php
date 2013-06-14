@@ -29,7 +29,7 @@
 <div class="modal">
   <div class="contain">
     <div class="video-pusher">
-      <!-- <iframe src="http://player.vimeo.com/video/60409948?title=0&amp;byline=0&amp;portrait=0" width="650" height="365" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> -->
+      <iframe src="http://player.vimeo.com/video/60409948?title=0&amp;byline=0&amp;portrait=0" width="650" height="365" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div><!-- video-pusher -->
   </div>
 </div>
@@ -41,9 +41,9 @@
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.fancybox-media.js"></script>
 
   <script type="text/javascript">
-  $(document).ready(function() {
-    $(".fancybox").fancybox();
-  });
+  // $(document).ready(function() {
+  //   $(".fancybox").fancybox();
+  // });
 </script>
   
   <!-- Google Analytics Code -->
