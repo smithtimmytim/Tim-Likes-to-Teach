@@ -17,7 +17,7 @@
         <?php the_post_thumbnail('post-art'); ?>
         <div class="text">
           <h3><a href="<?php the_permalink(); ?>" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
-          <p><?php the_field('course_lead'); ?></p>
+          <?php the_excerpt(); ?>
           <a href="<?php the_permalink(); ?>" class="btn secondary" title="Permanent Link to <?php the_title(); ?>">Learn More</a>
         </div><!-- end .text -->
       </article>
