@@ -12,8 +12,15 @@
             $product_name = get_field('integration_slug');
             if ( has_memberful_subscription ( '27-tim-likes-to-teach-subscription' ) || has_memberful_product ( $product_name ) ) : ?>
 
-            <?php else : ?>
+              <?php if (get_field('course_in_progress')) : ?>
 
+                <div class="in-progress">
+                  <p>This course is currently in progress. More videos are on the way.</p>
+                </div>
+
+              <?php endif; ?>
+
+            <?php else : ?>
               <div class="signup-cta">
                 <p>Get access to this course and others for $8.99/month. <a href="https://anythingoes.memberful.com/orders/new?subscription=27">Sign Up</a></p>
               </div>

@@ -449,6 +449,12 @@ a.profile {
   }
 }
 
+.in-progress {
+  @extend .signup-cta;
+  background: $alertColor;
+  color: darken($alertColor, 30%);
+}
+
 .video-preview {
   margin: 0 0 04.2553191%;
 }
