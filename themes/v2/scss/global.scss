@@ -602,6 +602,8 @@ hr {
 
 .breadcrumb {
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 02.6595745% 04.2553191%;
   p {
     font-size: .90em;
