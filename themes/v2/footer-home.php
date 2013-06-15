@@ -29,7 +29,7 @@
 <div class="modal">
   <div class="contain">
     <div class="video-pusher">
-      <iframe src="http://player.vimeo.com/video/60409948?title=0&amp;byline=0&amp;portrait=0" width="650" height="365" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      <iframe id="video" src="http://player.vimeo.com/video/60409948?title=0&amp;byline=0&amp;portrait=0" width="650" height="365" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div><!-- video-pusher -->
   </div>
 </div>
