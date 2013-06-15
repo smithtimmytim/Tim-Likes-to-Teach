@@ -1,5 +1,24 @@
 <!DOCTYPE html>
   <head>
+
+    <!-- 
+
+    @@@@@@@@@@@@@@@@@  @@@   @@@          @@@ 
+    @@@@@@@@@@@@@@@@@  @@@   @@@@        @@@@
+           @@@         @@@   @@@ @      @ @@@
+           @@@         @@@   @@@  @@  @@  @@@
+           @@@         @@@   @@@   @@@    @@@
+           @@@         @@@   @@@          @@@
+           @@@         @@@   @@@          @@@
+           @@@         @@@   @@@          @@@
+  
+    How much does a polar bear weigh? Just enough to break the ice.
+
+    Made with love in beautiful Saint Paul, Minnesota.
+    Tim Likes to Teach © 2013 Anythin’ Goes LLC and Timothy B. Smith.
+
+    -->
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title><?php bloginfo('name'); ?> » <?php is_home() ? bloginfo('description') : wp_title(''); ?></title>

@@ -25,7 +25,7 @@ $(".main-content, .video-pusher").fitVids();
       if (e.keyCode === 27) {
           $('body').removeClass('dialogIsOpen');
           // sets the source to nothing, stopping the video
-          $('iframe#video').attr('src','#');
+          $('iframe#video').attr('src','');
           // sets it back to the correct link so that it reloads immediately on the next window open
           $('iframe#video').attr('src','http://player.vimeo.com/video/60409948?title=0&amp;byline=0&amp;portrait=0');
           return false;
@@ -35,7 +35,7 @@ $(".main-content, .video-pusher").fitVids();
    $('.overlay').on('click', function() {
      $('body').removeClass('dialogIsOpen');
       // sets the source to nothing, stopping the video
-      $('iframe#video').attr('src','#');
+      $('iframe#video').attr('src','');
       // sets it back to the correct link so that it reloads immediately on the next window open
       $('iframe#video').attr('src','http://player.vimeo.com/video/60409948?title=0&amp;byline=0&amp;portrait=0');
   });
