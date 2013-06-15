@@ -31,7 +31,9 @@
               <?php the_field('video_preview'); ?>
             </div>
             <h2><?php the_title(); ?></h2>
-            <p class="course-meta"><?php the_field('total_course_videos'); ?> Total Videos</p>
+            <?php if (get_field('total_course_videos')) : ?>
+              <p class="course-meta"><?php the_field('total_course_videos'); ?> Total Videos</p>
+            <?php endif; ?>
             <p class="lead"><?php the_field('course_lead'); ?></p>
             <hr>
 
@@ -79,8 +81,11 @@
 
             <h3>Difficulty Level</h3>
             <p><?php the_field('difficulty_level'); ?></p>
-            <h3>Course Length</h3>
-            <p><?php the_field('course_length'); ?></p>
+            
+            <?php if (get_field('course_length')) : ?>
+              <h3>Course Length</h3>
+              <p><?php the_field('course_length'); ?></p>
+            <?php endif; ?>
             
             <?php
             $product_name = get_field('integration_slug');
