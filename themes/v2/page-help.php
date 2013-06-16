@@ -22,6 +22,8 @@ get_header();?>
       <p>Why sure! If you need help or have questions about one of the courses, fill out the form. I'll get back to you in a jiffy!</p>
       <h4>Can I share the videos?</h4>
       <p>I'd really appreciate if you didn't. Encourage others to sign up for their own membership.</p>
+      <h4>Can I cancel my membership?</h4>
+      <p>You can cancel at anytime by signing in to your account <a href="<?php echo memberful_sign_in_url(); ?>">here</a>.</p>
     </aside>
   </div><!-- end .module -->
 
