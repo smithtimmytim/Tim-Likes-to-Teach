@@ -55,7 +55,7 @@
 
                 <div class="video-list">
                 <h3>Course Videos</h3>
-                <ul class="course-videos">
+                <ul class="course-videos-list">
                   <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
                   <li>
                     <a class="btn secondary" href="<?php the_permalink(); ?>">Watch</a>

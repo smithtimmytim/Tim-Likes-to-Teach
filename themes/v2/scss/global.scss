@@ -512,7 +512,7 @@ hr {
   }
 }
 
-.course-videos {
+.course-videos-list {
   list-style-type: none;
   margin: 0;
   li {
@@ -553,6 +553,13 @@ hr {
       font-weight: bold;
       margin: 0 0 02.8571429%;
     }
+    h3 {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #535353;
+      margin: 4% 0 2%;
+    }
+
     p {
       color: $mainColor;
       font-size: 1.3em;
