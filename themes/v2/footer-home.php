@@ -18,7 +18,7 @@
 
   <footer role="contentinfo">
     <div class="contain">
-      <small><em>Tim Likes To Teach</em> &copy; <?php echo date('Y')?>  <a href="http://anythingo.es">Anythin&rsquo; Goes LLC.</a></small>
+      <small><em>Tim Likes To Teach</em> &copy; <?php echo date('Y')?>  <a href="http://anythingo.es">Anythin&rsquo; Goes LLC</a>. Hosted by <a href="http://www.mediatemple.net/#a_aid=4f42c6d7d53a5">Media Temple</a>.</small>
     </div><!-- end .contain -->
   </footer>
 
