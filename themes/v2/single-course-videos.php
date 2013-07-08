@@ -29,7 +29,23 @@
           <div class="breadcrumb">
             <a href="<?php bloginfo('url');?>" rel="home">Home</a>
             <span class="sep">&rsaquo;</span>
-            <a href="<?php the_field('course_page_link'); ?>" rel="tag"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></a>
+            
+            <?php
+              // Find connected posts
+              $connected = new WP_Query( array(
+              'connected_type' => 'courses_to_videos',
+              'connected_items' => get_queried_object(),
+              'nopaging' => true,
+              ) );
+
+              // Display connected posts
+              if ( $connected->have_posts() ) : $connected->the_post(); ?>
+            
+            <a href="<?php the_permalink(); ?>" rel="tag"><?php the_title(); ?></a>
+
+            <?php // Prevent weirdness
+            wp_reset_postdata(); endif; ?>
+
             <span class="sep">&rsaquo;</span>
             <span class="trail-end"><?php the_title(); ?></span>
           </div>
