@@ -34,4 +34,20 @@ function new_excerpt_more( $excerpt ) {
 }
 add_filter( 'wp_trim_excerpt', 'new_excerpt_more' );
 
+// Messing with WP Admin Bar
+
+
+function mytheme_admin_bar_render() {
+    global $wp_admin_bar;
+    // we can remove a menu item, like the Comments link, just by knowing the right $id
+    $wp_admin_bar->remove_menu('comments');
+    $wp_admin_bar->remove_menu('wpseo-menu');
+    // or we can remove a submenu, like New Link.
+    $wp_admin_bar->remove_menu('new-link', 'new-content');
+    $wp_admin_bar->remove_menu('new-media', 'new-content');
+    $wp_admin_bar->remove_menu('new-user', 'new-content');
+}
+// and we hook our function via
+add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+
 ?>
